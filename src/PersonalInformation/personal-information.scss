@@ -1,0 +1,46 @@
+.personal-information {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+
+	&__title {
+		margin-bottom: 15px;
+		font-size: 20px;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		width: 280px;
+		margin-bottom: 25px;
+	}
+
+	&__field {
+		height: 35px;
+		padding-left: 10px;
+		font-size: 15px;
+		border: 1px solid gray;
+		border-radius: 15px;
+		outline: none;
+
+		&:first-child {
+			margin-bottom: 5px;
+		}
+
+		&:last-of-type {
+			margin-top: 5px;
+		}
+
+		&:hover,
+		&:focus {
+			border-color: blue;
+		}
+
+		&--error {
+			border: 2px solid red;
+		}
+	}
+}
